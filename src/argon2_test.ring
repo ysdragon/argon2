@@ -11,7 +11,7 @@ but isLinux()
 	if arch = "x64"
 		loadlib("../lib/linux/amd64/libring_argon2.so")
 	but arch = "arm64"
-		loadlib("lib/linux/arm64/libring_argon2.so")
+		loadlib("../lib/linux/arm64/libring_argon2.so")
 	ok
 but isFreeBSD()
 	if arch = "x64"
