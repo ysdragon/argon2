@@ -159,21 +159,6 @@ RING_FUNC(ring_argon2_error_message)
  *  Constant Getter Functions
  */
 
-RING_FUNC(ring_get_argon2_d)
-{
-	RING_API_RETNUMBER(Argon2_d);
-}
-
-RING_FUNC(ring_get_argon2_i)
-{
-	RING_API_RETNUMBER(Argon2_i);
-}
-
-RING_FUNC(ring_get_argon2_id)
-{
-	RING_API_RETNUMBER(Argon2_id);
-}
-
 RING_FUNC(ring_get_argon2_version)
 {
 	RING_API_RETNUMBER(ARGON2_VERSION_NUMBER);
@@ -218,9 +203,6 @@ RING_LIBINIT
 	RING_API_REGISTER("argon2id_verify", ring_argon2id_verify);
 	RING_API_REGISTER("argon2_error_message", ring_argon2_error_message);
 
-	RING_API_REGISTER("get_argon2_d", ring_get_argon2_d);
-	RING_API_REGISTER("get_argon2_i", ring_get_argon2_i);
-	RING_API_REGISTER("get_argon2_id", ring_get_argon2_id);
 	RING_API_REGISTER("get_argon2_version", ring_get_argon2_version);
 	RING_API_REGISTER("get_argon2_default_t_cost", ring_get_argon2_default_t_cost);
 	RING_API_REGISTER("get_argon2_default_m_cost", ring_get_argon2_default_m_cost);

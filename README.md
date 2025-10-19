@@ -99,9 +99,6 @@ All verification functions take these parameters:
 
 The following constants are available after loading the library:
 
-- `ARGON2_D` - Argon2d type identifier
-- `ARGON2_I` - Argon2i type identifier
-- `ARGON2_ID` - Argon2id type identifier
 - `ARGON2_VERSION` - Current Argon2 version
 - `ARGON2_DEFAULT_T_COST` - Default time cost (3)
 - `ARGON2_DEFAULT_M_COST` - Default memory cost (19456 KB)

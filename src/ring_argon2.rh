@@ -1,8 +1,3 @@
-# Argon2 Types
-ARGON2_D = get_argon2_d()
-ARGON2_I = get_argon2_i()
-ARGON2_ID = get_argon2_id()
-
 # Argon2 Version
 ARGON2_VERSION = get_argon2_version()
 
