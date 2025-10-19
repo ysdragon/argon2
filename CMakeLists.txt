@@ -70,20 +70,20 @@ set(LIB_DEST_DIR "${CMAKE_CURRENT_SOURCE_DIR}/lib/${OS_DIR}/${ARCH_DIR}")
 
 
 # Check if Argon2 source exists, and fetch it if not
-if(NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/src/phc-winner-argon2/src/argon2.c")
+if(NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/src/argon2/src/argon2.c")
     message(STATUS "Argon2 source not found, fetching from GitHub...")
     FetchContent_Declare(
-        phc-winner-argon2
+        argon2
         GIT_REPOSITORY https://github.com/P-H-C/phc-winner-argon2.git
         GIT_TAG        20190702
     )
-    FetchContent_MakeAvailable(phc-winner-argon2)
+    FetchContent_MakeAvailable(argon2)
     
     # Set paths for the fetched content
-    set(ARGON2_SOURCE_DIR ${phc-winner-argon2_SOURCE_DIR})
+    set(ARGON2_SOURCE_DIR ${argon2_SOURCE_DIR})
 else()
     message(STATUS "Argon2 found locally, using local source.")
-    set(ARGON2_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src/phc-winner-argon2)
+    set(ARGON2_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src/argon2)
 endif()
 
 # Argon2 source files
