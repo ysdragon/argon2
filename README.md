@@ -35,7 +35,7 @@ load "argon2.ring"
 
 ### Basic Password Hashing
 
-To hash a password using Argon2d with default parameters:
+To hash a password using Argon2id with default parameters:
 
 ```ring
 cPassword = "my_secure_password"
