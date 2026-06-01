@@ -64,8 +64,7 @@ aPackageInfo = [
 		"lib/macos/arm64/libring_argon2.dylib"
 	],
 	:freebsdfiles = 	[
-		"lib/freebsd/amd64/libring_argon2.so",
-		"lib/freebsd/arm64/libring_argon2.so"
+		"lib/freebsd/amd64/libring_argon2.so"
 	],
 	:windowsringfolderfiles = 	[
 
