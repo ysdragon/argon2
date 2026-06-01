@@ -51,7 +51,9 @@ aPackageInfo = [
 	],
 	:linuxfiles = 	[
 		"lib/linux/amd64/libring_argon2.so",
-		"lib/linux/arm64/libring_argon2.so"
+		"lib/linux/arm64/libring_argon2.so",
+		"lib/linux/musl/amd64/libring_argon2.so",
+		"lib/linux/musl/arm64/libring_argon2.so"
 	],
 	:ubuntufiles = 	[
 
